@@ -6,8 +6,9 @@ import { motion } from "framer-motion";
 const Navbar = () => {
 
     return (
-        <div  className="w-full px-10 py-2 flex items-center justify-between sticky top-0 z-50 bg-[#00000034] backdrop-blur-2xl">
-            <motion.h1 transition={{duration: 0.3, delay : 0.2}} initial={{y : -100 , opacity : 0}} animate={{y : 0 , opacity : 1}} className={`text-2xl font-medium cursor-pointer`}>
+        <motion.div transition={{duration: 0.2, delay : 0.1}} initial={{y : -100 , opacity : 0}} animate={{y : 0 , opacity : 1}} className="w-full px-10 py-2 flex items-center justify-between sticky top-0 z-50 bg-[#00000034] backdrop-blur-2xl -mb-12">
+            
+            <motion.h1 transition={{duration: 0.3, delay : 0.2}} initial={{y : -100 , opacity : 0}} animate={{y : 0 , opacity : 1}} className={`text-2xl font-medium cursor-pointer text-[#FFFEE7]`}>
                 <Link href={'/'}>Naruto</Link>
             </motion.h1>
 
@@ -29,7 +30,7 @@ const Navbar = () => {
                 </motion.li>
             </ul>
 
-        </div>
+        </motion.div>
     );
 };
 

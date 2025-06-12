@@ -5,11 +5,12 @@ import {motion} from "framer-motion";
 import image from "@/public/images/bannerImage.jpg"
 import uzumakiLogo from "@/public/images/uzumakiLogo.png"
 import { useEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import ScrollSmoother from "gsap/ScrollSmoother";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import gsapAnimate from "@/app/utils/home/gsapAnimate";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 const Banner = () => {
 
@@ -33,7 +34,7 @@ const Banner = () => {
         gsapAnimate({ elementOrRef : leftRef3.current , start : 60 , end : 14 , duration : 0.3 , delay : 0.5 }) ;
         gsapAnimate({ elementOrRef : leftRef4.current , start : 60 , end : 15 , duration : 0.3 , delay : 0.6 }) ;
         gsapAnimate({ elementOrRef : leftRef5.current , start : 75 , end : 15 , duration : 0.3 , delay : 0.6 }) ;
-        gsapAnimate({ elementOrRef : leftRef6.current , start : 80 , end : 15 , duration : 0.3 , delay : 0.6 }) ;
+        gsapAnimate({ elementOrRef : leftRef6.current , start : 85 , end : 15 , duration : 0.3 , delay : 0.6 }) ;
 
         gsapAnimate({ elementOrRef : rightRef1.current , start : 30 , end : 14 , duration : 0.3 , delay : 0.3, Ix : 100 , Ax : 0 }) ;
         gsapAnimate({ elementOrRef : rightRef2.current , start : 35 , end : 15 , duration : 0.3 , delay : 0.3, Ix : 100 , Ax : 0 }) ;
@@ -43,8 +44,15 @@ const Banner = () => {
         
     } , [])
 
+    const handleScroll = () => {
+        const targetSection = document.querySelector("#childhood") as HTMLElement;
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+
     return (
-        <div className="w-full flex items-center justify-between gap-5 -mt-12 px-0 relative">
+        <div className="w-full flex items-center justify-between gap-5 -mt-0 px-0 relative">
             
             <motion.div transition={{duration: 0.3, delay : 0.2 , ease : "linear"}} initial={{opacity : 0}} animate={{opacity : 1}}  className="w-full h-screen absolute top-0 left-0 z-[-1]">
                 <Image src={image} width={678} height={100} alt="Banner image" unoptimized className="w-full h-screen"/>
@@ -91,7 +99,7 @@ const Banner = () => {
                     </div>
 
                     
-                    <motion.button ref={leftRef6} transition={{delay : 0.9 , duration : 0.3}} initial={{x:-550}} animate={{x:0}} className="mt-6 px-6 py-3 w-fit cursor-pointer bg-yellow-400 hover:bg-yellow-500 text-black rounded-full font-semibold shadow-lg hover:shadow-yellow-500/50 transition duration-200">
+                    <motion.button  onClick={handleScroll} ref={leftRef6} transition={{delay : 0.9 , duration : 0.3}} initial={{x:-550}} animate={{x:0}} className="mt-6 px-6 py-3 w-fit cursor-pointer bg-yellow-400 hover:bg-yellow-500 text-black rounded-full font-semibold shadow-lg hover:shadow-yellow-500/50 transition duration-200">
                         Start the Journey
                     </motion.button>
 
@@ -101,7 +109,7 @@ const Banner = () => {
 
                 <div className="col-span-1 flex flex-col items-end px-10">
 
-                    <motion.h1 ref={rightRef1} transition={{delay : 0.3 , duration : 0.3}} initial={{x:550}} animate={{x:0}} className="text-5xl font-extrabold leading-tight mt-52 text-right">
+                    <motion.h1 ref={rightRef1} transition={{delay : 0.3 , duration : 0.3}} initial={{x:550}} animate={{x:0}} className="text-5xl font-extrabold leading-tight mt-32 text-right">
                         Naruto Uzumaki
                     </motion.h1>
 

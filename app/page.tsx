@@ -20,6 +20,7 @@ export default function Home() {
     <div className="min-h-screen overflow-x-clip font-[family-name:var(--font-geist-sans)]">
       <Banner />
       <Childhood />
+      <div className="h-screen"></div>
     </div>
   );
 }

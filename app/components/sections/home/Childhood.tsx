@@ -136,7 +136,7 @@ const Childhood = () => {
                     unoptimized
                 />
 
-                <h1 ref={pRef1} className="text-4xl font-semibold mt-20 drop-shadow-lg text-white">A Alone Boy</h1>
+                <h1 ref={pRef1} className="text-4xl font-semibold mt-16 gro drop-shadow-lg text-white">A alone boy</h1>
 
                 <p ref={pRef2} className="text-lg leading-relaxed drop-shadow-lg text-white max-w-2xl">
                     Naruto Uzumaki grew up in silence — not by choice, but by the weight of fear and rejection.

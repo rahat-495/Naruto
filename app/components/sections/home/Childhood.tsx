@@ -168,7 +168,7 @@ const Childhood = () => {
                     even when the world turns its back on you. That’s what makes him a hero.
                 </p>
 
-                <p ref={pRef8} className="font-semibold bg-[#000b212d] backdrop-blur-3xl rounded-lg px-16 p-2"> The Story begin </p>
+                <p ref={pRef8} className="font-semibold border-y border-[#f5f3bc] bg-[#000b212d] backdrop-blur-3xl rounded-lg px-16 p-2"> The Story begin </p>
 
             </div>
 

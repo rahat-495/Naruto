@@ -2,8 +2,8 @@
 "use client"
 import Image from "next/image";
 import {motion} from "framer-motion";
-import image from "@/public/images/bannerImage.jpg"
-import uzumakiLogo from "@/public/images/uzumakiLogo.png"
+import image from "@/public/images/sec1/bannerImage.jpg"
+import uzumakiLogo from "@/public/images/sec1/uzumakiLogo.png"
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollSmoother from "gsap/ScrollSmoother";

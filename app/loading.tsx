@@ -1,7 +1,7 @@
 
 "use client"
 import Image from "next/image";
-import uzumakiLogo from "@/public/images/uzumakiLogo.png";
+import uzumakiLogo from "@/public/images/sec1/uzumakiLogo.png";
 
 const loading = () => {
     return (

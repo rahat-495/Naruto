@@ -4,9 +4,9 @@ import { useRef, useEffect } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import bannerImage1 from "@/public/images/firstImage.png";
-import bannerImage2 from "@/public/images/middleImage.png";
-import bannerImage3 from "@/public/images/rightImage.png";
+import bannerImage1 from "@/public/images/sec2/firstImage.png";
+import bannerImage2 from "@/public/images/sec2/middleImage.png";
+import bannerImage3 from "@/public/images/sec2/rightImage.png";
 
 gsap.registerPlugin(ScrollTrigger);
 

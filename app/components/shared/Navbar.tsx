@@ -19,7 +19,7 @@ const Navbar = () => {
             transition={{ duration: 0.2, delay: 0.1 }}
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="w-full px-10 py-2 flex items-center justify-between sticky top-0 z-50 bg-[#00000034] backdrop-blur-2xl -mb-12 cursor-none"
+            className="w-full px-10 py-2 flex items-center justify-between sticky top-0 z-50 bg-[#00000034] backdrop-blur-2xl -mb-12 cursor-"
         >
             <motion.h1
                 transition={{ duration: 0.3, delay: 0.2 }}
@@ -43,7 +43,7 @@ const Navbar = () => {
                                 : "hover:underline underline-offset-4"
                         }`}
                     >
-                        <Link href={item.href} className="cursor-none">{item.name}</Link>
+                        <Link href={item.href} className="cursor-">{item.name}</Link>
                     </motion.li>
                 ))}
             </ul>

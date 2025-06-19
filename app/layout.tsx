@@ -30,7 +30,7 @@ export default function RootLayout({
       
       <ReactLenis root>
 
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth cursor-none`}>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth cursor-`}>
           
           <Navbar />
           {children}

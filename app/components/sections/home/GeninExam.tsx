@@ -150,7 +150,7 @@ const GeninExam = () => {
                 </p>
 
                 <p  ref={leftRef4}>
-                    The Third Hokage dispatched all instructors to find Naruto. Iruka, Naruto’s teacher, tracked him down and confronted Mizuki, realizing Naruto was being used. But Naruto, hiding nearby, overheard the truth: Iruka truly cared for him—he always had.
+                    The Third Hokage dispatched all instructors to find Naruto. Iruka, Naruto’s teacher, tracked him down and confronted Mizuki, realizing that Naruto was being used. But Naruto, hiding nearby, overheard the truth: Iruka truly cared about him. Until that moment, Naruto had always believed Iruka didn’t care—but now, he finally understood Iruka’s genuine concern.
                 </p>
 
                 <p  ref={leftRef5}>
@@ -162,7 +162,7 @@ const GeninExam = () => {
                 </p>
 
                 <p  ref={leftRef7}>
-                    Iruka took off his own forehead protector and tied it on Naruto’s head. For the first time, Naruto was no longer just the Nine-Tails' host—he was a true ninja.
+                    Iruka took off his own forehead hedbend and tied it on Naruto’s head. For the first time, Naruto was no longer just the Nine-Tails' host—he was a true ninja.
                 </p>
 
                 <p  ref={leftRef8}>

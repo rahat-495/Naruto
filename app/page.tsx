@@ -5,6 +5,7 @@ import Banner from "./components/sections/home/Banner";
 import Childhood from "./components/sections/home/Childhood";
 import Lenis from "lenis";
 import GeninExam from "./components/sections/home/GeninExam";
+import CustomCursor from "./components/cursor/CustomCursor";
 
 export default function Home() {
 
@@ -18,7 +19,8 @@ export default function Home() {
   } , [])
 
   return (
-    <div className="min-h-screen overflow-x-clip font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen cursor-none overflow-x-clip font-[family-name:var(--font-geist-sans)]">
+      <CustomCursor />
       <Banner />
       <Childhood />
       <GeninExam />

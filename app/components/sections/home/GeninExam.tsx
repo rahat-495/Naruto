@@ -1,5 +1,6 @@
 
-import narutoImage from "@/public/images/geninSuparImg.png"
+import narutoImage from "@/public/images/sec3/geninSuparImg.png" ;
+import bannerImage from "@/public/images/sec3/bannerImage.png" ;
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -7,6 +8,8 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger) ;
 const GeninExam = () => {
+
+    const backgroundImageRef = useRef<HTMLDivElement>(null);
 
     const leftDivRef = useRef<HTMLDivElement>(null);
     const sectionRef = useRef<HTMLDivElement>(null);
@@ -26,81 +29,114 @@ const GeninExam = () => {
     useEffect(() => {
 
         const ctx = gsap.context(() => {
-            gsap.set(rightImageRef.current, {
-                opacity: 0,
-                y: -600,
-                x: 600,
-                width: "100%",
-                height: "100%",
-            });
 
-            gsap.set(
-                [
-                    leftRef1.current,
-                    leftRef2.current,
-                    leftRef3.current,
-                    leftRef4.current,
-                    leftRef5.current,
-                    leftRef6.current,
-                    leftRef7.current,
-                    leftRef8.current,
-                    leftRef9.current,
-                    leftRef10.current,
-                ],{ opacity: 0, x: -600 }
-            );
+            gsap.set([rightImageRef.current] , {opacity : 0 , y : -600 , x : 650 , width : "80%" , height : "100%"}) ;
+            gsap.set([ leftRef1.current , leftRef2.current , leftRef3.current , leftRef4.current , leftRef5.current , leftRef6.current , leftRef7.current , leftRef8.current , leftRef9.current , leftRef10.current ] , {opacity : 0 , x : -600}) ;
+            gsap.set([backgroundImageRef.current] , {opacity : 0.5 , y : -1000}) ;
 
-            const timeline = gsap.timeline({
-                scrollTrigger: {
-                    trigger: sectionRef.current,
-                    start: "top top",
-                    end: "bottom+=1000 top",
-                    scrub: true,
-                    pin: true,
-                },
-            });
+            const tl1 = gsap.timeline({
+                scrollTrigger : {
+                    trigger : sectionRef.current ,
+                    start : "top top" ,
+                    end : "100%" ,
+                    scrub : true ,
+                    pin : true ,
+                }
+            })
 
-            timeline.to(rightImageRef.current, {
+            const tl2 = gsap.timeline({
+                scrollTrigger : {
+                    trigger : leftDivRef.current ,
+                    start : "top top" ,
+                    end : "100%" ,
+                    scrub : true ,
+                }
+            })
+
+            tl1.to(backgroundImageRef.current, {
                 opacity: 1,
                 y: 0,
-                x: 0,
-                width: "80%",
-                height: "100%",
-                duration: 1,
+                duration: 0.5,
                 ease: "power2.out",
-            }, 0);
-
-            const leftRefs = [
-                leftRef1,
-                leftRef2,
-                leftRef3,
-                leftRef4,
-                leftRef5,
-                leftRef6,
-                leftRef7,
-                leftRef8,
-                leftRef9,
-                leftRef10,
-            ];
-
-            leftRefs.forEach((ref , index) => {
-                timeline.to(
-                    ref.current,
-                    {
-                    opacity: 1,
-                    x: 0,
-                    duration: 1,
-                    ease: "power2.out",
-                    },
-                    index === 0 ? 0 : `+=0.5`
-                );
             });
-        }, sectionRef);
 
-        return () => ctx.revert();
-    }, []);
+            tl1.to(rightImageRef.current , {
+                opacity : 1 ,
+                delay : 0.07 ,
+                y : 0 ,
+                x : 0 ,
+                width : "80%" ,
+                height : "100%" , 
+                duration : 1 ,
+                ease : "power2.out" ,
+            } , "<")
+
+            tl2.to(leftRef1.current , {
+                opacity : 1 ,
+                x : 0 ,
+                duration : 1 ,
+                delay : 0.3 ,
+                ease : "power2.out" ,
+            })
+            .to(leftRef2.current , {
+                opacity : 1 ,
+                x : 0 ,
+                duration : 1 ,
+                ease : "power2.out" ,
+            }).to(leftRef3.current , {
+                opacity : 1 ,
+                x : 0 ,
+                duration : 1 ,
+                ease : "power2.out" ,
+            }).to(leftRef4.current , {
+                opacity : 1 ,
+                x : 0 ,
+                duration : 1 ,
+                ease : "power2.out" ,
+            }).to(leftRef5.current , {
+                opacity : 1 ,
+                x : 0 ,
+                duration : 1 ,
+                ease : "power2.out" ,
+            }).to(leftRef6.current , {
+                opacity : 1 ,
+                x : 0 ,
+                duration : 1 ,
+                ease : "power2.out" ,
+            }).to(leftRef7.current , {
+                opacity : 1 ,
+                x : 0 ,
+                duration : 1 ,
+                ease : "power2.out" ,
+            }).to(leftRef8.current , {
+                opacity : 1 ,
+                x : 0 ,
+                duration : 1 ,
+                ease : "power2.out" ,
+            }).to(leftRef9.current , {
+                opacity : 1 ,
+                x : 0 ,
+                duration : 1 ,
+                ease : "power2.out" ,
+            }).to(leftRef10.current , {
+                opacity : 1 ,
+                x : 0 ,
+                duration : 1 ,
+                ease : "power2.out" ,
+            })
+
+        },sectionRef)
+
+        return () => ctx.revert() ;
+
+    } , [])
 
     return (
-        <div ref={sectionRef} className="h-screen grid grid-cols-2 overflow-hidden">
+        <div ref={sectionRef} className="h-screen grid grid-cols-2 overflow-hidden relative bg-black">
+
+            <div ref={backgroundImageRef} className="absolute w-full h-full">
+                <Image src={bannerImage} width={100} height={100} alt="Background image !" unoptimized className="absolute w-full h-full"/>
+            </div>
             
             <div ref={leftDivRef} className="text-white px-10 py-20 space-y-6 leading-relaxed font-light">
                 <h2 ref={leftRef1} className="text-4xl font-semibold text-white">The Genin Exam: Trials, Betrayal & Growth</h2>
@@ -137,13 +173,11 @@ const GeninExam = () => {
                     Though his journey had just begun, the Genin Exam became a turning point — the first time he proved to the world, and to himself, that he was more than a burden of the past. He was a boy with dreams, strength, and a will that would never be broken.
                 </p>
 
-                <p  ref={leftRef10} className="text-center text-lg font-medium text-[#fffdc0]">This is where his real story begins.</p>
+                <p  ref={leftRef10} className="text-center border-y border-[#f5f3bc] rounded-md text-lg font-medium text-[#fffdc0]">This is where his real story begins.</p>
             </div>
 
-
-
             <div ref={rightImageRef} className="w-full h-full overflow-hidden pl-0 ml-80 col-span-1">
-                <Image src={narutoImage} width={100} height={100} alt="Naruto jumped image !" unoptimized className="w-4/5 mt-12 object-cover ml-0"/>
+                <Image src={narutoImage} width={100} height={100} alt="Naruto jumped image !" unoptimized className="w-4/5 mt-12 object- ml-0"/>
             </div>
 
         </div>

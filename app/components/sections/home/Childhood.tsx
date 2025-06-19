@@ -172,7 +172,6 @@ const Childhood = () => {
 
             </div>
 
-
             <div ref={imageRef2} className="col-span-1 relative z-10">
                 <Image
                 src={bannerImage3}

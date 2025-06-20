@@ -140,7 +140,7 @@ const Team7Start = () => {
     } , [])
 
     return (
-        <div ref={sectionRef} className='h-screen w-full overflow-hidden bg-gradient-to-tl from-[#04121e] to-[#0d1e29] relative grid grid-cols-2'>
+        <div ref={sectionRef} className='h-screen w-full overflow-hidden bg-black relative grid grid-cols-2'>
             
             <div ref={backgroundImageRef} className="absolute w-full bottom-0 left-0 z-[-1]">
                 <Image src={backgroundImageForSec4} width={100} height={100} alt="Section 4 back ground image !" unoptimized className="w-full h-full -z-0"/>

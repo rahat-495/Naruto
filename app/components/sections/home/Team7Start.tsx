@@ -177,17 +177,17 @@ const Team7Start = () => {
                     At the end of the test, Naruto was tied up and left hungry. Sasuke and Sakura were told to eat, but forbidden from sharing with Naruto. Despite this, they decided to break the rule and gave Naruto some food, believing it was unfair to let a teammate suffer alone.
                 </p>
 
-                {/* <p>
+                <p ref={textRef8}>
                     Just then, Kakashi appeared—and instead of scolding them, he passed them. He told them that the true purpose of the test was to see whether they would prioritize each other. His lesson was clear and unforgettable: <span className="font-medium text-[#fffdc0]">“In the ninja world, those who break the rules are scum... but those who abandon their friends are worse than scum.”</span>
                 </p>
 
-                <p>
+                {/* <p>
                     It was in that moment they weren’t just a team on paper—they became a unit built on trust and mutual respect. Kakashi, though tough, had planted the first seeds of camaraderie that would shape their future missions and challenges.
-                </p> */}
+                </p>
 
                 <p ref={textRef8}>
                     That evening, as they walked back together under the slowly setting sun, a quiet bond had begun to form. Team 7 wasn’t perfect, but it had potential. Their journey had only just begun.
-                </p>
+                </p> */}
 
                 <p ref={textRef9} className="text-center border-y border-[#f5f3bc] rounded-md text- font-medium text-[#fffdc0] mt-6">
                     This was more than a test. It was the first step of three young ninjas becoming something greater—<span className="italic">a true team.</span>

@@ -26,6 +26,7 @@ export default function Home() {
       <Childhood />
       <GeninExam />
       <Team7Start />
+      <div className="h-screen"></div>
     </div>
   );
 }

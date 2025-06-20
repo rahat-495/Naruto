@@ -34,7 +34,7 @@ const Team7Start = () => {
 
             gsap.set(leftImageRef.current , {opacity : 0 , x : -600}) ;
             gsap.set(backgroundImageRef.current , {opacity : 0 , y : -1000 , filter : "blur(10px)"}) ;
-            gsap.set([textRef1.current , textRef2.current , textRef3.current , textRef4.current , textRef5.current , textRef6.current , textRef7.current , textRef7.current , textRef8.current , textRef9.current] , {opacity : 0 , x : 600}) ;
+            gsap.set([rightDivRef.current , textRef1.current , textRef2.current , textRef3.current , textRef4.current , textRef5.current , textRef6.current , textRef7.current , textRef7.current , textRef8.current , textRef9.current] , {opacity : 0 , x : 600}) ;
 
             const tl1 = gsap.timeline({
                 scrollTrigger : {
@@ -52,14 +52,13 @@ const Team7Start = () => {
                     start : "top top" ,
                     end : "100%" ,
                     scrub : true ,
-                    pin : true ,
                 }
             })
 
             tl1.to(backgroundImageRef.current , {
                 y : 0 ,
                 opacity : 1 ,
-                duration : 0.5 ,
+                duration : 0.3 ,
                 filter : "blur(5px)" ,
                 ease : "power2.out" ,
             })
@@ -67,60 +66,67 @@ const Team7Start = () => {
             tl1.to(leftImageRef.current , {
                 x : 0 ,
                 opacity : 1 ,
-                delay : 0.5 ,
+                delay : 0.3 ,
                 duration : 0.5 ,
                 ease : "power2.out" ,
             } , "<")
 
-            tl2.to(textRef1.current , {
+            tl2.to(rightDivRef.current , {
+                x : 0 ,
+                opacity : 1 ,
+                delay : 1.8 ,
+                duration : 0.5 ,
+                ease : "power2.out" ,
+            })
+            .to(textRef1.current , {
                 x : 0 ,
                 opacity : 1 ,
                 duration : 0.5 ,
                 ease : "power2.out" ,
             })
-            tl2.to(textRef2.current , {
+            .to(textRef2.current , {
                 x : 0 ,
                 opacity : 1 ,
                 duration : 0.5 ,
                 ease : "power2.out" ,
             })
-            tl2.to(textRef3.current , {
+            .to(textRef3.current , {
                 x : 0 ,
                 opacity : 1 ,
                 duration : 0.5 ,
                 ease : "power2.out" ,
             })
-            tl2.to(textRef4.current , {
+            .to(textRef4.current , {
                 x : 0 ,
                 opacity : 1 ,
                 duration : 0.5 ,
                 ease : "power2.out" ,
             })
-            tl2.to(textRef5.current , {
+            .to(textRef5.current , {
                 x : 0 ,
                 opacity : 1 ,
                 duration : 0.5 ,
                 ease : "power2.out" ,
             })
-            tl2.to(textRef6.current , {
+            .to(textRef6.current , {
                 x : 0 ,
                 opacity : 1 ,
                 duration : 0.5 ,
                 ease : "power2.out" ,
             })
-            tl2.to(textRef7.current , {
+            .to(textRef7.current , {
                 x : 0 ,
                 opacity : 1 ,
                 duration : 0.5 ,
                 ease : "power2.out" ,
             })
-            tl2.to(textRef8.current , {
+            .to(textRef8.current , {
                 x : 0 ,
                 opacity : 1 ,
                 duration : 0.5 ,
                 ease : "power2.out" ,
             })
-            tl2.to(textRef9.current , {
+            .to(textRef9.current , {
                 x : 0 ,
                 opacity : 1 ,
                 duration : 0.5 ,

@@ -6,6 +6,7 @@ import Childhood from "./components/sections/home/Childhood";
 import Lenis from "lenis";
 import GeninExam from "./components/sections/home/GeninExam";
 import Team7Start from "./components/sections/home/Team7Start";
+import FirstMission from "./components/sections/home/FirstMission";
 // import CustomCursor from "./components/cursor/CustomCursor";
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
       <Childhood />
       <GeninExam />
       <Team7Start />
-      <div className="h-screen"></div>
+      <FirstMission />
     </div>
   );
 }

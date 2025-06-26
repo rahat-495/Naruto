@@ -19,7 +19,7 @@ const Navbar = () => {
             transition={{ duration: 0.2, delay: 0.1 }}
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="w-full px-10 py-2 flex items-center justify-between sticky top-0 z-50 bg-[#00000034] backdrop-blur-2xl -mb-12 cursor-"
+            className="w-full px-10 py-2 flex items-center justify-between sticky top-0 z-50 bg-[#00000017] backdrop-blur-2xl -mb-12 cursor-"
         >
             <motion.h1
                 transition={{ duration: 0.3, delay: 0.2 }}

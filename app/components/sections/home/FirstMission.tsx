@@ -67,7 +67,7 @@ const FirstMission = () => {
     return (
         <div ref={sectionRef} className="h-screen bg-black relative flex  flex-col items-center justify-center">
             
-            <div ref={bgImageRef} className="absolute w-full h-">
+            <div ref={bgImageRef} className="absolute w-full h- overflow-hidden">
                 <Image src={backgroundImage} width={100} height={100} alt="Section 5 background image !" unoptimized className="w-full h-"/>
             </div>
 

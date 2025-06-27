@@ -30,6 +30,7 @@ export default function Home() {
       <Team7Start />
       <FirstMission />
       <NarutosDialogue />
+      <div className="h-screen"></div>
     </div>
   );
 }

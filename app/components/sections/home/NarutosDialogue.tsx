@@ -42,7 +42,7 @@ const NarutosDialogue = () => {
 
                 <p
                     ref={textRef}
-                    className="text-[400px] whitespace-nowrap text-white/20 font-extrabold px-10 tracking-tight drop-shadow-[0_10px_10px_rgba(255,255,255,0.3)] z-10"
+                    className="text-[400px] whitespace-nowrap font-extrabold px-10 tracking-tight drop-shadow-[5px_5px_2px_rgba(255,255,255,0.3)] z-10 bg-gradient-to-l from-blue-800/80  to-blue-900/10 inline-block text-transparent bg-clip-text"
                 >
                     Naruto Uzumaki — I never go back on my word!
                 </p>

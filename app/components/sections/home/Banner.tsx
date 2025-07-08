@@ -1,5 +1,4 @@
 
-"use client"
 import Image from "next/image";
 import {motion} from "framer-motion";
 import image from "@/public/images/sec1/bannerImage.jpg"

@@ -1,5 +1,4 @@
 
-"use client" ;
 import backgroundImageForSec4 from "@/public/images/sec4/backgroundImageForSec4.png";
 import team7allMemberImage from "@/public/images/sec4/team7allMemberImage.png";
 import Image from "next/image";

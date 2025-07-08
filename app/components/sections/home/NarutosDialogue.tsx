@@ -1,5 +1,4 @@
 
-"use client";
 import { FaArrowRightLong } from "react-icons/fa6";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";

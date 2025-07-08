@@ -8,6 +8,7 @@ import GeninExam from "./components/sections/home/GeninExam";
 import Team7Start from "./components/sections/home/Team7Start";
 import FirstMission from "./components/sections/home/FirstMission";
 import NarutosDialogue from "./components/sections/home/NarutosDialogue";
+import Team7Intruduction from "./components/sections/home/Team7Intruduction";
 // import CustomCursor from "./components/cursor/CustomCursor";
 
 export default function Home() {
@@ -28,9 +29,9 @@ export default function Home() {
       <Childhood />
       <GeninExam />
       <Team7Start />
+      <Team7Intruduction />
       <FirstMission />
       <NarutosDialogue />
-      <div className="h-screen"></div>
     </div>
   );
 }

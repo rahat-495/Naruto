@@ -26,6 +26,7 @@ const Team7Start = () => {
     const textRef7 = useRef<HTMLParagraphElement>(null);
     const textRef8 = useRef<HTMLParagraphElement>(null);
     const textRef9 = useRef<HTMLParagraphElement>(null);
+    const textRef10 = useRef<HTMLParagraphElement>(null);
 
     useEffect(() => {
 
@@ -131,6 +132,12 @@ const Team7Start = () => {
                 duration : 0.5 ,
                 ease : "power2.out" ,
             })
+            .to(textRef10.current , {
+                x : 0 ,
+                opacity : 1 ,
+                duration : 0.5 ,
+                ease : "power2.out" ,
+            })
 
         })
 
@@ -191,6 +198,8 @@ const Team7Start = () => {
                 <p ref={textRef9} className="text-center border-y border-[#f5f3bc] rounded-md text- font-medium text-[#fffdc0] mt-6">
                     This was more than a test. It was the first step of three young ninjas becoming something greater—<span className="italic">a true team.</span>
                 </p>
+
+                <p ref={textRef10}>  </p>
             </div>
 
         </div>

@@ -31,7 +31,7 @@ export default function Home() {
       <Team7Start />
       <Team7Intruduction />
       <FirstMission />
-      <NarutosDialogue />
+      {/* <NarutosDialogue /> */}
     </div>
   );
 }
